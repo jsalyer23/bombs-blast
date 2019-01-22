@@ -4,5 +4,11 @@
   <!-- This fills the remaining space of the current row -->
   <span class="fill-space"></span>
 
-  <span>Right Aligned Text</span>
+  <button (click)="openMenu()" mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
 </mat-toolbar>
