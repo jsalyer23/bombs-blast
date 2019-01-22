@@ -1,0 +1,10 @@
+@import '../../variables';
+
+mat-toolbar {
+    background-color: $alt-black;
+    font-family: $font-family-heading;
+
+    .fill-space {
+        flex: 1 1 auto;
+    }
+}
