@@ -1,18 +1,8 @@
 @import '../../variables';
 .app-container {
     height: 100%;
+
     mat-card {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        background-color: $alt-black;
-        height: 100%;
-        * {
-            display: flex;
-            justify-content: center;
-        }
-        mat-card-title {
-            font-family: $font-family-heading;
-        }
+        @include mat-card-base;
     }
 }

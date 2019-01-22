@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|UnifrakturCook:700');
 // Font Family
-$font-family-text: 'Oswald', sans-serif;
-$font-family-heading: 'UnifrakturCook', cursive;
+$font-family-text: 'Oswald',
+sans-serif;
+$font-family-heading: 'UnifrakturCook',
+cursive;
 // Colors
 $black: #000;
 $alt-black: rgb(54,
@@ -9,3 +11,18 @@ $alt-black: rgb(54,
 50);
 $grey: grey;
 $white: #fff;
+// Mixins
+@mixin mat-card-base {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: $alt-black;
+    height: 100%;
+    * {
+        display: flex;
+        justify-content: center;
+    }
+    mat-card-title {
+        font-family: $font-family-heading;
+    }
+}
