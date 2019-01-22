@@ -1,10 +1,19 @@
 @import '../../variables';
-
 mat-toolbar {
     background-color: $alt-black;
     font-family: $font-family-heading;
-
     .fill-space {
         flex: 1 1 auto;
+    }
+    .home-link {
+        font-size: 40px;
+    }
+    mat-menu { // TODO: This isn't working, must need to be more specific
+        div {
+            &.mat-menu-content {
+               color: #d8d2d2;
+            }
+        }
+        // background-color: rgb(197, 194, 194);
     }
 }
