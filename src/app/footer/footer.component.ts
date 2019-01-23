@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  public facebookUrl: String = 'https://www.facebook.com/bombsblast/';
+
   constructor() { }
 
   ngOnInit() {

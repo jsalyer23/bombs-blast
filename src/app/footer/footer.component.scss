@@ -2,5 +2,25 @@
 
 mat-card {
     @include mat-card-base;
+    max-height: 25%;
+    margin-bottom: 30px;
+
+    mat-card-content {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        .left-side-content, .right-side-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+
+            a {
+                padding: 12%;
+                white-space: nowrap;
+            }
+        }
+    }
 }
 
