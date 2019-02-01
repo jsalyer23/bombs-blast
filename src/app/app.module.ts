@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 // Angular Material
-import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatCardModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatCardModule, MatDividerModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import { TourComponent } from './tour/tour.component';
 import { MediaComponent } from './media/media.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContentCardComponent } from './content-card/content-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     TourComponent,
     MediaComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ContentCardComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,7 @@ import { FooterComponent } from './footer/footer.component';
     MatCardModule,
     MatMenuModule,
     MatIconModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
