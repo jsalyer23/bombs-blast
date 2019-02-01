@@ -1,3 +1,32 @@
-<p>
-  about works!
-</p>
+<mat-card>
+  <mat-card-title>{{title}}</mat-card-title>
+  <mat-card-content>
+    <div class="content-container">
+
+      <h1>Members</h1>
+      <div class="band-members-container">
+        <span *ngFor="let member of bombsBlast.bandMembers">
+          {{member.name}}, {{member.role}}
+          <img src="https://via.placeholder.com/150"/>
+        </span>
+      </div>
+    </div>
+
+    <div class="content-container">
+      <h1>Biography</h1>
+      <div class="biography-container">
+        <span>{{bombsBlast.biography}}</span>
+      </div>
+    </div>
+
+    <div class="content-container">
+      <h1>More Information</h1>
+      <div class="other-info-container">
+        <span><a href="mailto:{{bombsBlast.contact}}">Contact Us!</a></span>
+        <span>{{bombsBlast.homeTown}}</span>
+        <span><a href="{{bombsBlast.recordLabel.url}}">{{bombsBlast.recordLabel.name}}</a></span>
+      </div>
+    </div>
+
+  </mat-card-content>
+</mat-card>
